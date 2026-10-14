@@ -1,0 +1,14 @@
+{
+  "name": "Flow · 언어를 흐름으로 배우기",
+  "short_name": "Flow",
+  "description": "상황 속에서 단어를 익히는 새로운 방식",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1120",
+  "theme_color": "#6366f1",
+  "lang": "ko",
+  "categories": ["education", "productivity"],
+  "icons": []
+}
