@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Flow">
+  <link rel="manifest" href="manifest.json">
+  <title>Flow · 언어를 흐름으로 배우기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-bar" id="appBar">
+    <button class="app-bar__back" id="backBtn" aria-label="뒤로">←</button>
+    <div class="app-bar__title" id="appBarTitle">Flow</div>
+    <div class="app-bar__spacer"></div>
+  </header>
+
+  <main id="app" class="app-main"></main>
+
+  <nav class="tab-bar" id="tabBar">
+    <a href="#/" data-nav="home" class="tab-bar__item">
+      <span class="tab-bar__icon">🏠</span>
+      <span class="tab-bar__label">홈</span>
+    </a>
+    <a href="#/study" data-nav="study" class="tab-bar__item">
+      <span class="tab-bar__icon">📚</span>
+      <span class="tab-bar__label">학습</span>
+    </a>
+    <a href="#/practice" data-nav="practice" class="tab-bar__item">
+      <span class="tab-bar__icon">🎯</span>
+      <span class="tab-bar__label">연습</span>
+    </a>
+    <a href="#/more" data-nav="more" class="tab-bar__item">
+      <span class="tab-bar__icon">⋯</span>
+      <span class="tab-bar__label">더보기</span>
+    </a>
+  </nav>
+
+  <!-- Registry -->
+  <script src="data/registry.js"></script>
+
+  <!-- Topics -->
+  <script src="data/topics/food.js"></script>
+  <script src="data/topics/cafe.js"></script>
+  <script src="data/topics/restaurant.js"></script>
+  <script src="data/topics/bar.js"></script>
+  <script src="data/topics/nutrition.js"></script>
+  <script src="data/topics/sports.js"></script>
+  <script src="data/topics/mbti.js"></script>
+  <script src="data/topics/childhood.js"></script>
+  <script src="data/topics/screen-addiction.js"></script>
+  <script src="data/topics/cosmos.js"></script>
+  <script src="data/topics/train-station.js"></script>
+  <script src="data/topics/bank.js"></script>
+  <script src="data/topics/hospital.js"></script>
+  <script src="data/topics/police-station.js"></script>
+  <script src="data/topics/cinema.js"></script>
+  <script src="data/topics/theatre.js"></script>
+  <script src="data/topics/airport.js"></script>
+  <script src="data/topics/immigration.js"></script>
+  <script src="data/topics/bookstore.js"></script>
+  <script src="data/topics/school.js"></script>
+  <script src="data/topics/supermarket.js"></script>
+  <script src="data/topics/travel.js"></script>
+  <script src="data/topics/going-abroad.js"></script>
+  <script src="data/topics/renting.js"></script>
+  <script src="data/topics/business-meeting.js"></script>
+  <script src="data/topics/sales.js"></script>
+  <script src="data/topics/marketing.js"></script>
+  <script src="data/topics/software-dev.js"></script>
+  <script src="data/topics/international-relations.js"></script>
+  <script src="data/topics/engineering.js"></script>
+  <script src="data/topics/semiconductor.js"></script>
+  <script src="data/topics/health.js"></script>
+  <script src="data/topics/mental-health.js"></script>
+  <script src="data/topics/emotions.js"></script>
+  <script src="data/topics/aliens.js"></script>
+  <script src="data/topics/geography.js"></script>
+  <script src="data/topics/history.js"></script>
+  <script src="data/topics/politics.js"></script>
+  <script src="data/topics/at-the-hotel.js"></script>
+
+  <!-- Grammar -->
+  <script src="data/grammar/articles.js"></script>
+  <script src="data/grammar/present-tense.js"></script>
+  <script src="data/grammar/present-perfect.js"></script>
+  <script src="data/grammar/past-simple-vs-present-perfect.js"></script>
+  <script src="data/grammar/third-conditional.js"></script>
+  <script src="data/grammar/get-used-to.js"></script>
+  <script src="data/grammar/comparison.js"></script>
+  <script src="data/grammar/countable-uncountable.js"></script>
+  <script src="data/grammar/prepositions-time.js"></script>
+  <script src="data/grammar/prepositions-place.js"></script>
+  <script src="data/grammar/ed-ing-adjectives.js"></script>
+  <script src="data/grammar/modals.js"></script>
+  <script src="data/grammar/phrasal-verbs.js"></script>
+  <script src="data/grammar/subject-verb-agreement.js"></script>
+  <script src="data/grammar/word-order.js"></script>
+  <script src="data/grammar/confusing-pairs.js"></script>
+  <script src="data/grammar/gerunds-infinitives.js"></script>
+  <script src="data/grammar/relative-clauses.js"></script>
+  <script src="data/grammar/passive-voice.js"></script>
+  <script src="data/grammar/reported-speech.js"></script>
+
+  <!-- TOPIK vocabulary -->
+  <script src="data/topik/topik-1.js"></script>
+
+  <!-- Exercise engine -->
+  <script src="exercise.js"></script>
+  <script src="crossword.js"></script>
+
+  <!-- Crossword language mode: "ko" for Korean, "en" for English -->
+  <script>window.CROSSWORD_LANG = "ko";</script>
+
+  <!-- App -->
+  <script src="app.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
